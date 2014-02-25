@@ -233,7 +233,7 @@
     <Content Include="Scripts\lib\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\lib\knockout-2.2.0.js" />
     <Content Include="Scripts\lib\toastr.js" />
-    <Content Include="Scripts\lib\modernizr-2.6.2.js" />
+    <Content Include="Scripts\lib\modernizr-2.7.1.js" />
     <Content Include="Scripts\lib\moment.js" />
     <Content Include="Scripts\lib\require.js" />
     <Content Include="Scripts\lib\underscore.js" />
