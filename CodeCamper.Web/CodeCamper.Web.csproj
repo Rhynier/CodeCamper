@@ -285,6 +285,9 @@
     <Content Include="Scripts\lib\r.js" />
     <Content Include="Scripts\lib\underscore.min.js" />
     <Content Include="Scripts\lib\toastr.min.js" />
+    <Content Include="Scripts\lib\moment-with-langs.js" />
+    <Content Include="Scripts\lib\moment-with-langs.min.js" />
+    <Content Include="Scripts\lib\moment.min.js" />
     <Content Include="Test\ajax.session.tests.js" />
     <Content Include="Test\vm.sessions.tests.js" />
     <Content Include="Test\vm.favorites.tests.js" />
