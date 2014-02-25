@@ -42,7 +42,7 @@ namespace CodeCamper.Web
                     // Knockout and its plugins
                     "~/Scripts/lib/knockout-{version}.js",
                     "~/Scripts/lib/knockout.activity.js",
-                    "~/Scripts/lib/knockout.asyncCommand.js",
+                    "~/Scripts/lib/knockout.command.js",
                     "~/Scripts/lib/knockout.dirtyFlag.js",
                     "~/Scripts/lib/knockout.validation.js",
                     "~/Scripts/lib/koExternalTemplateEngine.js",

@@ -227,14 +227,11 @@
     <Content Include="Scripts\app\binder.js" />
     <None Include="Properties\PublishProfiles\codecamperdemo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\codecamperdemo - Web Deploy.pubxml" />
-    <None Include="Scripts\lib\sammy-0.7.1-vsdoc.js" />
     <Content Include="Scripts\lib\knockout.activity.js" />
-    <Content Include="Scripts\lib\knockout.asyncCommand.js" />
+    <Content Include="Scripts\lib\knockout.command.js" />
     <Content Include="Scripts\lib\knockout.dirtyFlag.js" />
     <Content Include="Scripts\lib\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\lib\knockout-2.2.0.js" />
-    <Content Include="Scripts\lib\sammy-0.7.1.js" />
-    <Content Include="Scripts\lib\sammy-0.7.1.min.js" />
     <Content Include="Scripts\lib\toastr.js" />
     <Content Include="Scripts\lib\modernizr-2.6.2.js" />
     <Content Include="Scripts\lib\moment.js" />
@@ -281,6 +278,8 @@
     <Content Include="Scripts\lib\knockout.validation.js" />
     <Content Include="Scripts\lib\TrafficCop.js" />
     <Content Include="Scripts\lib\sammy.title.js" />
+    <Content Include="Scripts\lib\sammy-0.7.4.js" />
+    <Content Include="Scripts\lib\sammy-0.7.4.min.js" />
     <Content Include="Test\ajax.session.tests.js" />
     <Content Include="Test\vm.sessions.tests.js" />
     <Content Include="Test\vm.favorites.tests.js" />

@@ -236,12 +236,12 @@
 // By: Hans Fjällemark and John Papa
 // https://github.com/CodeSeven/KoLite
 
-;(function($) {
+; (function ($) {
     "use strict";
 
     /* ACTIVITY INDICATOR EXTENDED CLASS DEFINITION
     * ========================= */
-    var Indicator = function($element) {
+    var Indicator = function ($element) {
         this.$element = $element;
         this.onlyIcon = this.$element.contents().length === 1 && this.$element.children('i').length === 1;
         this.activityText = this.$element.data('activity-text');
@@ -250,7 +250,7 @@
     };
 
     Indicator.prototype = {
-        createTemporaryIcon: function() {
+        createTemporaryIcon: function () {
             if (this.onlyIcon)
                 return;
             //this.temporaryIcon = $('<i class="icon-" style="padding-left: 5px"></i>');
@@ -258,16 +258,16 @@
             this.$element.append(this.temporaryIcon);
         },
 
-        hideExistingIcons: function() {
+        hideExistingIcons: function () {
             if (this.onlyIcon)
                 this.icons.css('visibility', 'hidden');
         },
 
-        moveSpinnerToFront: function() {
+        moveSpinnerToFront: function () {
             $('body > div, body > group').first().css('z-index', 9999);
         },
 
-        removeTemporaryIcon: function() {
+        removeTemporaryIcon: function () {
             if (!this.temporaryIcon)
                 return;
 
@@ -275,7 +275,7 @@
             this.temporaryIcon = null;
         },
 
-        setText: function(state) {
+        setText: function (state) {
             if (!this.activityText)
                 return;
             var data = this.$element.data(),
@@ -285,11 +285,11 @@
             this.$element[val](data[state + 'Text']);
         },
 
-        showExistingIcons: function() {
+        showExistingIcons: function () {
             this.icons.css('visibility', 'visible');
         },
 
-        start: function() {
+        start: function () {
             this.isBusy = true;
             this.setText('activity');
             this.createTemporaryIcon();
@@ -308,7 +308,7 @@
             this.moveSpinnerToFront();
         },
 
-        stop: function() {
+        stop: function () {
             this.removeTemporaryIcon();
             this.showExistingIcons();
             this.isBusy = false;
@@ -317,7 +317,7 @@
             this.$element.removeClass('disabled').removeAttr('disabled');
         },
 
-        update: function(isLoading) {
+        update: function (isLoading) {
             if (isLoading && !this.isBusy) {
                 this.start();
             }
@@ -331,8 +331,8 @@
     /* ACTIVITY INDICATOR EXTENDED PLUGIN DEFINITION
     * ========================== */
 
-    $.fn.activityEx = function(isLoading) {
-        var activity = function($element) {
+    $.fn.activityEx = function (isLoading) {
+        var activity = function ($element) {
             if (!isLoading) {
                 $element.activity(false);
                 return;
@@ -352,20 +352,20 @@
             });
             $('body > div').first().css('z-index', 9999);
         },
-            buttonActivity = function($element) {
+            buttonActivity = function ($element) {
                 var data = $element.data('activityEx');
                 if (!data)
                     $element.data('activityEx', (data = new Indicator($element)));
                 data.update(isLoading);
             };
-        return this.each(function() {
+        return this.each(function () {
             $(this).is('button, input, a') ? buttonActivity($(this)) : activity($(this));
         });
     };
 })(jQuery);
 
 
-;(function ($, ko) {
+; (function ($, ko) {
     ko.bindingHandlers.activity = {
         init: function (element) {
             ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
