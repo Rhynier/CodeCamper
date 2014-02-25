@@ -281,6 +281,7 @@
     <Content Include="Scripts\lib\sammy-0.7.4.js" />
     <Content Include="Scripts\lib\sammy-0.7.4.min.js" />
     <Content Include="Scripts\lib\r.js" />
+    <Content Include="Scripts\lib\underscore.min.js" />
     <Content Include="Test\ajax.session.tests.js" />
     <Content Include="Test\vm.sessions.tests.js" />
     <Content Include="Test\vm.favorites.tests.js" />
@@ -309,6 +310,7 @@
     <Content Include="Test\vm.favorites.tests.cshtml" />
     <Content Include="Test\vm.sessions.tests.cshtml" />
     <Content Include="Test\ajax.session.tests.cshtml" />
+    <Content Include="Scripts\lib\underscore.min.map" />
     <None Include="Test\dataservice.session.tests.cshtml" />
     <Content Include="Test\qunit\qunit-composite.css" />
     <Content Include="Test\qunit\qunit-composite.js" />
